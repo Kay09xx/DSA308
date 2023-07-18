@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="530.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller">
+   <children>
+      <AnchorPane layoutY="43.0" prefHeight="488.0" prefWidth="197.0" style="-fx-background-color: ffffffff;">
+         <children>
+            <Button layoutX="11.0" layoutY="190.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="178.0" text="PRODUCT" textFill="#0066f5">
+               <font>
+                  <Font name="Segoe UI Bold" size="22.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect></Button>
+            <Button layoutX="11.0" layoutY="261.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="178.0" text="SELL" textFill="#0066f5">
+               <font>
+                  <Font name="Segoe UI Bold" size="22.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect></Button>
+            <Button layoutX="11.0" layoutY="335.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="178.0" text="DATABASE " textFill="#0066f5">
+               <font>
+                  <Font name="Segoe UI Bold" size="22.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Circle fill="#bac0c6" layoutX="75.0" layoutY="84.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#1e5283" layoutX="98.0" layoutY="114.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#498dcd" layoutX="121.0" layoutY="84.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text layoutX="61.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMS" textAlignment="CENTER" wrappingWidth="74.13671875">
+               <font>
+                  <Font name="Segoe UI Bold" size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane accessibleText="dfds" prefHeight="44.0" prefWidth="774.0" style="-fx-background-color: ffffffff;">
+         <children>
+            <Label layoutX="200.0" layoutY="6.0" prefHeight="35.0" prefWidth="425.0" text="Inventory Management  System" textFill="#0066f5">
+               <font>
+                  <Font name="Segoe UI Bold" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="8.0" layoutY="99.0" prefHeight="244.0" prefWidth="29.0">
+         <children>
+
+         </children>
+      </AnchorPane>
+      <Pane layoutX="244.0" layoutY="54.0" prefHeight="466.0" prefWidth="520.0" style="-fx-background-color: #F7EBED;">
+         <children>
+            <Pane layoutX="-41.0" layoutY="-8.0" prefHeight="482.0" prefWidth="533.0" style="-fx-background-color: #F7EBED;">
+               <children>
+                  <Button layoutX="7.0" layoutY="10.0" mnemonicParsing="false" onAction="#addItem" prefHeight="35.0" prefWidth="127.0" text="Add An Item" textFill="#0066f5">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect></Button>
+                  <TextField layoutX="81.0" layoutY="51.0" prefHeight="26.0" prefWidth="267.0" style="-fx-background-color: white;" />
+                  <Button layoutX="14.0" layoutY="51.0" mnemonicParsing="false" text="Search" textFill="#0066f5" />
+                  <TableView fx:id="producTable" editable="true" layoutX="7.0" layoutY="93.0" prefHeight="336.0" prefWidth="520.0" style="-fx-background-color: #F0DDE0;" tableMenuButtonVisible="true">
+                    <columns>
+                      <TableColumn fx:id="id" text="PRODUCT ID" />
+                      <TableColumn fx:id="name" prefWidth="147.0" text="NAME" />
+                        <TableColumn fx:id="costPrice" prefWidth="54.0" text="COST" />
+                        <TableColumn fx:id="quantity" prefWidth="52.0" text="QTY" />
+                        <TableColumn fx:id="totalPrice" prefWidth="60.0" text="TOTAL" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+         </children></Pane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

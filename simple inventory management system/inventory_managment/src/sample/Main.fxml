@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>m
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller">
+   <children>
+      <AnchorPane layoutY="43.0" prefHeight="488.0" prefWidth="200.0" style="-fx-background-color: FFFFFF;">
+         <children>
+            <Button layoutX="14.0" layoutY="170.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="178.0" text="PRODUCT " textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="19.0" />
+               </font></Button>
+            <Button layoutX="11.0" layoutY="273.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="178.0" text="SELL" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane accessibleText="dfds" layoutX="1.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="44.0" prefWidth="774.0" style="-fx-background-color: 082552;">
+         <children>
+            <Label layoutX="159.0" layoutY="25.0" prefHeight="35.0" prefWidth="456.0" text="INVENTORY MANAGEMENT SYSTEM " textAlignment="CENTER" textFill="#0066f5bf" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="650.0" layoutY="-70.0" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="8.0" layoutY="99.0" prefHeight="244.0" prefWidth="29.0">
+         <children>
+
+         </children>
+      </AnchorPane>
+      <Pane layoutX="200.0" layoutY="56.0" prefHeight="482.0" prefWidth="575.0" style="-fx-background-color: #F7EBED;">
+         <children>
+            <Button layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#addItem" prefHeight="30.0" prefWidth="103.0" text="Add An Item" />
+            <TextField layoutX="134.0" layoutY="47.0" prefHeight="26.0" prefWidth="267.0" style="-fx-background-color: white;" />
+            <TableView fx:id="producTable" editable="true" layoutX="9.0" layoutY="103.0" prefHeight="336.0" prefWidth="557.0" style="-fx-background-color: #F0DDE0;" tableMenuButtonVisible="true">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="90.0" text="PRODUCT ID" />
+                <TableColumn fx:id="name" prefWidth="119.0" text="NAME" />
+                  <TableColumn fx:id="costPrice" prefWidth="50.0" text="COST" />
+                  <TableColumn fx:id="quantity" prefWidth="52.0" text="QTY" />
+                  <TableColumn fx:id="totalPrice" prefWidth="87.0" text="Total " />
+              </columns>
+            </TableView>
+            <Button layoutX="14.0" layoutY="45.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="103.0" text="Search" textFill="#0066f5" wrapText="true" />
+         </children>
+      </Pane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>
